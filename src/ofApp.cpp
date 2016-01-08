@@ -52,6 +52,7 @@ void ofApp::update(){
             // add some random to interval
             float weight = ofRandom(0,1);
             interval = 500 - (250 * weight);
+            cout << interval << endl;
 
         }
     }
@@ -110,10 +111,16 @@ void ofApp::keyPressed(int key){
 
     // some controls
     if (key == 'b') backgroundWhite = !backgroundWhite;
-    if (key == OF_KEY_UP) interval += 10; cout << interval << endl;
-    if (key == OF_KEY_DOWN) interval -= 10; cout << interval << endl;
-    if (key == OF_KEY_RIGHT) scale *= 1.1;
-    if (key == OF_KEY_LEFT) scale *= 0.9;
+//    if (key == OF_KEY_UP) {
+//        interval += 10;
+//        cout << interval << endl;
+//    }
+//    if (key == OF_KEY_DOWN) {
+//        interval -= 10;
+//        cout << interval << endl;
+//    }
+//    if (key == OF_KEY_RIGHT) scale *= 1.1;
+//    if (key == OF_KEY_LEFT) scale *= 0.9;
 
 }
 
