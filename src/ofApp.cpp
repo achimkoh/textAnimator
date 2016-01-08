@@ -4,6 +4,7 @@
 void ofApp::setup(){
     
     ofSetFrameRate(60);
+    ofEnableAntiAliasing();
 
     // setup font
     fontsize = 320;
